@@ -28,3 +28,11 @@ dist-ssr
 
 # Environment variables
 .env
+
+# Optional: Docker
+Dockerfile*
+.dockerignore
+.docker/
+
+# Fly.io
+fly.toml
