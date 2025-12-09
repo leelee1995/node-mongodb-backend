@@ -12,12 +12,14 @@ const PORT = process.env.PORT || 3001;
 
 app.use(
 	cors({
-		origin: "*",
+		origin: true,
 		accessControlAllowOrigin: "*",
 		credentials: true,
 		methods: ["GET", "POST", "DELETE"],
 	})
 );
+
+app.options("*", cors());
 
 app.use(express.json()); // allows us to parse incoming requests: req.body
 app.use(cookieParser()); // allows us to parse incoming cookies
