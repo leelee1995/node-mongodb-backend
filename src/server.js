@@ -15,7 +15,6 @@ app.use(
 		origin: true,
 		accessControlAllowOrigin: "*",
 		credentials: true,
-		methods: ["GET", "POST", "DELETE"],
 	})
 );
 
